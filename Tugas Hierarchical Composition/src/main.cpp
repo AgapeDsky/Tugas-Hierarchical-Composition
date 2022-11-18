@@ -155,10 +155,10 @@ void loop() {
   if (device_res.super_state == 0) {
     digitalWrite(7, 1);
     if (device_res.operational_state == 1) {
-      digitalWrite(8, 1);
+      digitalWrite(8, 1); digitalWrite(9,0); digitalWrite(10,0);
     }
     else {
-      digitalWrite(8, 0);
+      digitalWrite(8, 0); digitalWrite(9,0); digitalWrite(10,0);
     }
   }
   else {
